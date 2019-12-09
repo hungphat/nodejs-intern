@@ -1,17 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const PORT = 3000;
+const HOST = '0.0.0.0';
 
 const health    = require('./route/health');
 const hello     = require('./route/hello');
 const db        = require('./route/alldb');
-const conectdb  = require('./model/conectdb');
+const conectdb  = require('./model/resetdb');
 
 
-let app = express();
+const app = express();
 
 // listen at port :PORT - default as 3000
-let port = process.env.PORT || 3000;
-app.listen(port);
+
+app.listen(PORT,HOST);
 
 // register the route(s)
 app.route('/health').get(health.on_get);

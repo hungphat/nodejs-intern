@@ -3,11 +3,17 @@ s=$BASH_SOURCE ; s=$(dirname "$s") ; s=$(cd "$s" && pwd) ; SCRIPT_HOME="$s"  # g
 a="$SCRIPT_HOME/.." ;                a=$(cd "$a" && pwd) ; APP_HOME="$a"
 
 cd "$APP_HOME"
+    # delete docker
+
+    docker image rm -f hungphat/nodejs_start_postgres
+
     # build the docker image for this api app i.e. local image namgivu/falcon_start
-    docker build -t namgivu/nodejs_start   .
-                 #t aka tag of the image   #build image from :current_folder/Dockerfile
+    docker build -t hungphat/nodejs_start   .
+                 #t aka tag of the image  #build image from :current_folder/Dockerfile
+
+
 cd --
 
 # aftermath check
 echo
-docker image ls | grep -iE 'namgivu/nodejs_start|REPOSITORY'
+docker image ls | grep -iE 'hungphat/nodejs_start|REPOSITORY'

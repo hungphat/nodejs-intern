@@ -1,23 +1,3 @@
-install nvm node npm yarn
-
-require nvm ref. bit.ly/361kgIF
-
-# install latest lts node+npm - lts aka long term support
-nvm install lts/*
-nvm use     lts/*
-nvm install-latest-npm
-
-node --version; which node
-npm  --version; which npm
-
-# install :yarn under current :node ref. https://stackoverflow.com/a/53094675/248616 
-npm install -g yarn  # g aka global
-
-# create empty package.json
-yarn init -y
-yarn install
-install packages
-
 express to create the server nodmon to keep track of changes to files and automatically restart the server
 
 yarn add express
@@ -38,25 +18,14 @@ api run
 # install package
 yarn install
 
-# run api
-./bin/run-api.sh  # ctrl-c to stop
-call endpoint as api been run
 
-httpie is required
 
-http :3000/health
-
-http :3000/hello
-http :3000/hello/
-http :3000/hello/nn
-
-Fix Database config in 
-./model/conectdb.js
+#Fix Database config in 
+./model/resetdb.js
 .src/model/route/alldb.js
 
 
-Run CRUD
-
+#CRUD 
 on GET
 curl -X GET \
 http://localhost:3000/users/ 
@@ -82,3 +51,11 @@ http://localhost:3000/users \
   "name":"Tin",
   "dob":"1998-05-05"
   }'
+
+
+# run api
+./bin/run-api.sh  # ctrl-c to stop
+call endpoint as api been run
+
+
+
