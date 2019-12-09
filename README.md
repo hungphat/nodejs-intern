@@ -1,20 +1,20 @@
 # Install nvm for MACOS
 Install via Homebrew
 
-    ```brew install nvm```
+```brew install nvm```
 
 # Install nodejs 
 Install the latest node version with: 
 
-    ```nvm install node```
+```nvm install node```
 
 Use the latest node verison with 
 
-    ```nvm use node```
+```nvm use node```
 
 # Check version:
 
-    ```node --version```
+```node --version```
 
 # Install yarn
 
@@ -23,7 +23,7 @@ Use the latest node verison with
 # Which yarn you can install some_packages
 Install Package:
     
-    ```yarn add express
-       yarn add body-parser
-       yarn add nodemon
-    ```
+```yarn add express
+   yarn add body-parser
+   yarn add nodemon
+```

@@ -12,4 +12,4 @@ app.use(
     })
 )
 
-app.get('/health', health.get)
+app.get('/health', health.getStatus)
