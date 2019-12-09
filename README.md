@@ -1,28 +1,13 @@
-express to create the server nodmon to keep track of changes to files and automatically restart the server
-
-yarn add express
-yarn add nodemon
-yarn add body-parser
-api run 0th
-
-add blank api app in server.js add task start to package.json
-
-run it
-
-yarn start  # ctrl-c to stop
-
-# aka
-./bin/run-api.sh  # ctrl-c to stop
-api run
-
-# install package
-yarn install
-
-
+#What in my package ?
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "httpie": "^1.1.2",
+    "nodemon": "^1.19.4",
+    "pg": "^7.14.0",
 
 #Fix Database config in 
 ./model/resetdb.js
-.src/model/route/alldb.js
+.src/model/route/crudnodejs.js
 
 
 #CRUD 
@@ -54,7 +39,7 @@ http://localhost:3000/users \
 
 
 # run api
-./bin/run-api.sh  # ctrl-c to stop
+docker-compose up  # ctrl-c to stop
 call endpoint as api been run
 
 

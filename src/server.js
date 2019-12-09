@@ -5,7 +5,7 @@ const HOST = '0.0.0.0';
 
 const health    = require('./route/health');
 const hello     = require('./route/hello');
-const db        = require('./route/alldb');
+const db        = require('./route/crudnodejs');
 const conectdb  = require('./model/resetdb');
 
 

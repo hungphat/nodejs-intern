@@ -25,14 +25,14 @@ const getUserById = (request, response) => {
     })
 }
 
-const createUser = (request, response) => {  //TODO: em ko post dc anh giup em a
+const createUser = (request, response) => {
     const { name, dob } = request.body
 
     pool.query('INSERT INTO customer (name, dob) VALUES ($1, $2)', [name, dob], (error, results) => {
         if (error) {
             throw error
         }
-        response.status(201).send(`User added with ID: ${results.insertId}`)
+        response.status(201).send(`User added successful`)
     })
 }
 
