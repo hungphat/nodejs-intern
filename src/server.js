@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 
 const health    = require('./route/health');
 const app = express();
+app.listen(3000);
 
 app.use(bodyParser.json())
 app.use(
@@ -12,4 +13,4 @@ app.use(
     })
 )
 
-app.get('/health', health.getStatus)
+app.get('/health', health.on_get())

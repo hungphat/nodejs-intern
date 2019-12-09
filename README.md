@@ -16,14 +16,12 @@ Use the latest node verison with
 
 ```node --version```
 
-# Install yarn
+# Install nodejs package:
 
-```brew install yarn```
-
-# Which yarn you can install some_packages
-Install Package:
-    
-```yarn add express
-   yarn add body-parser
-   yarn add nodemon
 ```
+brew install yarn
+yarn install 
+```
+
+# Run API :
+```.bin/run-api.sh```
