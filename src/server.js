@@ -36,4 +36,4 @@ app.put('/users/:id', db.updateUser)
 app.delete('/users/:id', db.deleteUser)
 
 // print ready
-console.log(`api server started at port=${port}`);
+console.log(`api server started at port=${PORT}`);

@@ -5,4 +5,5 @@ a="$SCRIPT_HOME/.." ;                a=$(cd "$a" && pwd) ; APP_HOME="$a"
 cd "$APP_HOME"
     # stop the container ie stop the api app
     cn='hungphat_nodejs_start'; docker stop $cn && docker rm $cn  # cn aka CONTAINER_NAME
+    cn='hungphat_nodejs_start_postgres'; docker stop $cn && docker rm $cn  # cn aka CONTAINER_NAME
 cd -

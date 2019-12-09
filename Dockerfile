@@ -15,7 +15,7 @@ RUN npm install -g yarn
 WORKDIR /app
 
 # node_modules tag - change _b to new value to invalidate node_modules/ and force a rerun
-RUN echo 191020_b
+RUN echo 191020_l
 
 # install app packages
 COPY ./package.json .

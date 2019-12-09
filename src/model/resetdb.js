@@ -1,11 +1,11 @@
 const pg = require('pg');
 
 const config = {
-    host: 'localhost',
+    host: 'hungphat_nodejs_start_postgres',
     user: 'postgres',
-    password: 'admin',
+    password: '',
     database: 'postgres',
-    port: 7777,
+    port: 5432,
 };
 
 const client = new pg.Client(config);
