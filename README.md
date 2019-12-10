@@ -23,3 +23,11 @@ Use the latest node version with
 # Install Package 
     
 ```yarn install```
+
+# Run health:
+
+```http :3000/health```
+
+# Run API:
+
+```nodemon src/server.js```
