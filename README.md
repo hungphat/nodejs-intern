@@ -8,10 +8,18 @@ Install the latest node version with:
 
 ```nvm install node```
 
-Use the latest node verison with 
+Use the latest node version with 
 
 ```nvm use node```
 
 # Check version:
 
 ```node --version```
+
+# Install yarn
+
+```brew install yarn```
+
+# Install Package 
+    
+```yarn install```
