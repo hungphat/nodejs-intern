@@ -6,3 +6,10 @@ c=hungphat_nodejs_postgres
 
 docker exec -it $c psql -U postgres -c  "DROP DATABASE IF EXISTS customer;"
 docker exec -it $c psql -U postgres -c  "CREATE DATABASE customer;"
+
+#create table customers
+
+docker exec -it $c psql -U postgres -d customer -c  "CREATE TABLE customers (id serial PRIMARY KEY, name VARCHAR(50), dob DATE);"
+docker exec -it $c psql -U postgres -d customer -c  "INSERT INTO  customers (name, dob) VALUES ('Phat',  '1993-11-05');           "
+docker exec -it $c psql -U postgres -d customer -c  "INSERT INTO  customers (name, dob) VALUES ('Trang', '1993-10-26');           "
+docker exec -it $c psql -U postgres -d customer -c  "INSERT INTO  customers (name, dob) VALUES ('Thang', '2000-05-05');           "
