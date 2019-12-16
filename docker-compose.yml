@@ -12,10 +12,10 @@ services:
     restart: always
 
   api:
-    image: hungphat/nodejs
+    image: hungphat/nodejs_crud
     ports:
-      - ${API_PORT:-6666}:3000
-    container_name: hungphat_nodejs_start
+      - ${API_PORT:-5555}:3000
+    container_name: hungphat_nodejs
     restart: always
 
 volumes:
