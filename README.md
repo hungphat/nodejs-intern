@@ -28,6 +28,29 @@ Use the latest node version with
 
 ```http :3000/health```
 
+#Crud
+Get all user
+
+```curl -X GET http://0.0.0.0:5555/users```
+
+Get 1 User
+
+```curl -X GET http://0.0.0.0:5555/users/1```
+
+Post
+
+```curl -X POST http://0.0.0.0:5555/users  -d '{"name": "Quang Hai","dob": "2000-01-01" }'```
+
+Update
+ 
+```curl -X PUT http://0.0.0.0:5555/users/1 -d '{"name": "Tua", "dob": "2003-01-01"}'```
+ 
+Delete 
+
+```curl -X DELETE http://0.0.0.0:5555/users```
+
+#Run Docker
+```docker-compose up```
 # Run API:
 
 ```nodemon src/server.js```
